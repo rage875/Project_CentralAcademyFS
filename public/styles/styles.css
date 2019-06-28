@@ -55,6 +55,11 @@ header .nav-login {
     margin: 15px;
 }
 
+header .nav-register {
+    background-color: whitesmoke;
+    margin: 15px;
+}
+
 body #banner {
     height: 300px;
 }
@@ -73,3 +78,10 @@ body #aval-printers {
     height: 350px;
 }
 
+body #contact {
+    height: 300px;
+}
+
+body #footer {
+    height: 300px;
+}
