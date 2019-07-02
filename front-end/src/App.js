@@ -31,7 +31,7 @@ function createNavBar(){
 
 function App() {
   return (
-    createNavBar()
+    displayLogo()
   );
 }
 
