@@ -1,6 +1,8 @@
 import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import logo from '../pics/logo.svg';
+import '../styles/App.css';
+
+import Header from './Header.js';
 
 function displayLogo(){
   return(
@@ -15,23 +17,14 @@ function displayLogo(){
       </a>
     </header>
   </div>
-  )
-}
-
-function createNavBar(){
-  return(
-    <div className = "Nav">
-      <ul>
-        <li><a href="/">Logo</a></li>
-        <li><a href="/">Printer's profile</a></li>
-      </ul> 
-    </div>
-  )
+  );
 }
 
 function App() {
   return (
-    displayLogo()
+    <div>
+      <Header />
+    </div>
   );
 }
 
