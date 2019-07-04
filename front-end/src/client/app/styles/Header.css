@@ -1,0 +1,17 @@
+.navbar-light .navbar-brand {
+    color: #17a2b8;
+}
+
+.navbar-light .navbar-nav .nav-link, 
+.navbar-light .navbar-nav .show > .nav-link {
+    color: whitesmoke;
+}
+
+.navbar-light .navbar-nav .nav-link:hover {
+    color: dimgray;
+}
+
+.btn-outline-success {
+    color: #17a2b8;
+    border-color: #17a2b8;
+}
