@@ -1,7 +1,6 @@
 .dropDownIcon{
     height: 2rem;
     width: 2rem;
-    padding-bottom: 1px;
 }
 
 .dropdown-toggle::after{

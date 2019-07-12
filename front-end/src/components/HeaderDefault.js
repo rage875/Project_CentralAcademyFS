@@ -1,10 +1,10 @@
 import React from 'react';
 import Navbar from 'react-bootstrap/Navbar';
 
-class HeaderLogin extends React.Component {
+class HeaderDefault extends React.Component {
   render() {
     return (
-      <Navbar bg="dark" variant="dark">
+      <Navbar bg="dark" expand="sm" variant="dark">
         <Navbar.Brand href="/">
         <img src=
             "../../MainIcon.png" width="30" height="30"
@@ -16,4 +16,4 @@ class HeaderLogin extends React.Component {
   }
 }
 
-export default HeaderLogin;
+export default HeaderDefault;

@@ -15,7 +15,7 @@ import "../styles/HeaderMain.css";
 import personIcon from "../pics/user-profile.png";
 import signupIcon from "../pics/user-plus-pink.png";
 import signinIcon from "../pics/iconic/account-login.svg";
-import helpIcon from "../pics/iconic/question-mark.svg";
+import aboutIcon from "../pics/iconic/question-mark.svg";
 
 
 class HeaderMain extends React.Component {
@@ -29,8 +29,8 @@ class HeaderMain extends React.Component {
       (<img src={signupIcon} className="align-top" width="20" height="20" alt="" />);
     const navSigninIcon =
       (<img src={signinIcon} width="15" height="15" alt="" />);
-    const navHelpIcon =
-      (<img src={helpIcon} className="align-baseline" width="15" height="15" alt="" />);
+    const navAboutIcon =
+      (<img src={aboutIcon} className="align-baseline" width="15" height="15" alt="" />);
 
     return (
       <Navbar bg="dark" expand="sm" variant="dark">
@@ -56,7 +56,7 @@ class HeaderMain extends React.Component {
           >
             <NavDropdown.Item className={this.getNavLinkClass("/register")}>
               {navSignupIcon}
-              <NavLink to="/login" >Sign-up</NavLink>
+              <NavLink to="/register" >Sign-up</NavLink>
             </NavDropdown.Item>
 
             <NavDropdown.Item className={this.getNavLinkClass("/login")}>
@@ -67,8 +67,8 @@ class HeaderMain extends React.Component {
             <NavDropdown.Divider />
               
             <NavDropdown.Item className={this.getNavLinkClass("/about")}>
-              {navHelpIcon}
-              <NavLink to="/login" > Help</NavLink>
+              {navAboutIcon}
+              <NavLink to="/about" > About</NavLink>
             </NavDropdown.Item>
 
           </NavDropdown >
