@@ -4,7 +4,7 @@ import HeaderAbout from '../components/HeaderDefault';
 
 export default () => (
     <div>
-        <HeaderAbout />;
+        <HeaderAbout />
         <h1>About page</h1>
     </div>
   );

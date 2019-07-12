@@ -1,10 +1,11 @@
-import React from 'react';
+import React from "react";
 
-import HeaderRegister from '../components/HeaderDefault';
+import HeaderRegister from "../components/HeaderDefault";
+import RegisterForm from "../components/RegisterForm";
 
 export default () => (
     <div>
-        <HeaderRegister />;
-        <h1>Register page</h1>
+        <HeaderRegister />
+        <RegisterForm />
     </div>
   );

@@ -1,9 +1,11 @@
-import React from 'react';
+import React from "react";
 
-import HeaderMain from '../components/HeaderMain';
+import Header from "../components/HeaderMain";
+import Banner from "../components/CarouselMain";
 
 export default () => (
     <div>
-        <HeaderMain />;
+        <Header />
+        <Banner />
     </div>
   );
