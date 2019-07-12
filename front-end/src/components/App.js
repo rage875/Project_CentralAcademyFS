@@ -1,12 +1,26 @@
+// Packages
 import React from 'react';
-import '../styles/App.css';
+import Route from 'react-router-dom/Route'
+import BrowserRouter from 'react-router-dom/BrowserRouter'
 
-import Header from './Header.js';
+// Pages
+import Login from '../pages/login';
+
+// Components
+import HeaderMain from './HeaderMain';
+
+// Styles
+import '../styles/App.css';
+import Nav from 'react-bootstrap/Nav';
 
 function App() {
   return (
     <div>
-      <Header />
+      <BrowserRouter>
+        <Nav />
+        <Route exact path="/" component={HeaderMain}/>
+        <Route exact path="/login" component={Login}/>
+      </BrowserRouter>
     </div>
   );
 }
