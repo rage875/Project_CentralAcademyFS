@@ -1,7 +1,6 @@
 // Packages
 import React from "react";
-import Route from "react-router-dom/Route"
-import BrowserRouter from "react-router-dom/BrowserRouter"
+import {Route, BrowserRouter} from "react-router-dom";
 
 // Pages
 import Main from "../pages/main";

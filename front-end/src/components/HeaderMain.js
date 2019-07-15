@@ -1,12 +1,13 @@
 import React from "react";
 import Navbar from "react-bootstrap/Navbar";
 import Nav from "react-bootstrap/Nav";
+import NavItem from "react-bootstrap/NavItem"
 import NavDropdown from "react-bootstrap/NavDropdown";
 import FormControl from "react-bootstrap/FormControl";
 import Form from "react-bootstrap/Form";
 import Button from "react-bootstrap/Button";
-import NavLink from "react-router-dom/NavLink";
-import withRouter from "react-router-dom/withRouter";
+import {withRouter} from "react-router-dom";
+import { LinkContainer } from 'react-router-bootstrap';
 
 import "../styles/HeaderMain.css";
 
@@ -55,20 +56,23 @@ class HeaderMain extends React.Component {
             id="basic-nav-dropdown"
           >
             <NavDropdown.Item className={this.getNavLinkClass("/register")}>
-              {navSignupIcon}
-              <NavLink to="/register" >Sign-up</NavLink>
+              <LinkContainer to="/register">
+                <NavItem>{navSignupIcon}Sign-up</NavItem>
+              </LinkContainer>
             </NavDropdown.Item>
 
+
             <NavDropdown.Item className={this.getNavLinkClass("/login")}>
-              {navSigninIcon}
-              <NavLink to="/login" > Sign-in</NavLink>
+              <LinkContainer to="/login">
+                <NavItem>{navSigninIcon} Sign-in</NavItem>
+              </LinkContainer>
             </NavDropdown.Item>
 
             <NavDropdown.Divider />
-              
             <NavDropdown.Item className={this.getNavLinkClass("/about")}>
-              {navAboutIcon}
-              <NavLink to="/about" > About</NavLink>
+              <LinkContainer to="/about">
+                <NavItem>{navAboutIcon} About</NavItem>
+              </LinkContainer>
             </NavDropdown.Item>
 
           </NavDropdown >

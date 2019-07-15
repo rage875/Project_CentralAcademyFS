@@ -1,0 +1,5 @@
+.carousel-indicators li { visibility: hidden; }
+
+.right.carousel-control, .left.carousel-control {
+  display: none;
+}
